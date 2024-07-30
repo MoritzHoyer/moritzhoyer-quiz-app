@@ -18,7 +18,7 @@ body {
   font-family: var(--font);
   font-weight: 400;
   color: var(--color-black);
-  letter-spacing: 0.02em;
+  letter-spacing: 0.2;
   margin: 0;
   padding: 0;
   display: flex;

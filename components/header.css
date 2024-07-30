@@ -3,8 +3,8 @@
   top: 0;
   left: 0;
   width: 100%;
-  background-color: #ffd2ff;
-  color: black;
+  background-color: var(--color-rose);
+  color: var(--color-text);
   padding: 10px;
   text-align: center;
   z-index: 1000;
@@ -15,5 +15,6 @@
 .header__title {
   margin: 0;
   font-size: 60px;
+  font-weight: 900;
   letter-spacing: -0.5;
 }
