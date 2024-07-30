@@ -13,6 +13,7 @@
   top: 0;
   left: 0;
   right: 0;
+  height: 78px;
   background: var(--color-rose);
   color: var(--color-text);
   padding: 10px;
@@ -20,6 +21,7 @@
   z-index: 1000;
   display: flex;
   justify-content: center;
+  margin-bottom: 15px;
 }
 
 .header__title {
