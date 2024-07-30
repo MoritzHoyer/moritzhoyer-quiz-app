@@ -1,13 +1,7 @@
 @import "./global.css";
 @import "./components/header.css";
 
-.main {
-  flex: 1;
-  padding: 10px 5px 5px;
-  margin-top: 95px;
-}
-
-.question-card {
+.card {
   position: relative;
   margin-top: 15px;
   margin-left: 15px;
@@ -18,7 +12,7 @@
   text-align: center;
 }
 
-.question-card__bookmark {
+.card__bookmark {
   position: absolute;
   top: -20px;
   right: 5px;
@@ -27,15 +21,15 @@
   background: none;
 }
 
-.question-card__bookmark .icon {
+.card__bookmark .icon {
   width: 50px;
 }
 
-.question-card__title {
+.card__title {
   font-size: 24px;
 }
 
-.question-card__answer-button {
+.card__answer-button {
   display: inline-block;
   margin: 20px;
   padding: 16px 30px;
@@ -49,7 +43,7 @@
   display: none;
 }
 
-.question-card__tags {
+.card__tags {
   position: absolute;
   left: 13px;
   bottom: 1px;
