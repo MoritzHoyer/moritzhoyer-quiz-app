@@ -1,0 +1,43 @@
+.card {
+  position: relative;
+  margin: 30px 15px;
+  padding: 30px;
+  background-color: #d7e1e1;
+  text-align: center;
+}
+
+.card__bookmark {
+  position: absolute;
+  top: -20px;
+  right: 5px;
+  border: none;
+  cursor: pointer;
+  background: none;
+}
+
+.card__bookmark .icon {
+  width: 50px;
+}
+
+.card__title {
+  font-family: var(--font);
+  font-weight: 700;
+  color: var(--color-black);
+  letter-spacing: 0.2;
+  font-size: 24px;
+}
+
+.card__tags {
+  position: absolute;
+  left: 13px;
+  bottom: 1px;
+}
+
+.tag {
+  background-color: #000000;
+  border-radius: 5px;
+  padding: 5px 8px;
+  margin-right: 5px;
+  color: #d7e1e1;
+  font-size: 14px;
+}

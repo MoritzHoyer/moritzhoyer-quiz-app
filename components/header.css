@@ -1,9 +1,19 @@
+:root {
+  --color-rose: #ffd2ff;
+  --color-grey: #d7e1e1;
+  --color-blue: #0028aa;
+  --color-black: #000000;
+  --color-white: #fff;
+  --font: "Bricolage Grotesque", sans-serif;
+  --color-text: var(--color-black);
+}
+
 .header {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
-  background-color: var(--color-rose);
+  background: var(--color-rose);
   color: var(--color-text);
   padding: 10px;
   text-align: center;
@@ -14,7 +24,9 @@
 
 .header__title {
   margin: 0;
+  font-family: var(--font);
   font-size: 60px;
   font-weight: 900;
   letter-spacing: -0.5;
+  text-align: center;
 }
