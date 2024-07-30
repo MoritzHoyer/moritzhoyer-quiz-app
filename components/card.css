@@ -1,9 +1,21 @@
+:root {
+  --color-rose: #ffd2ff;
+  --color-grey: #d7e1e1;
+  --color-blue: #0028aa;
+  --color-black: #000000;
+  --color-white: #fff;
+  --font: "Bricolage Grotesque", sans-serif;
+  --color-text: var(--color-black);
+}
+
 .card {
   position: relative;
-  margin: 30px 15px;
-  padding: 30px;
-  background-color: #d7e1e1;
+  margin: 20px 10%;
+  padding: 3% 10%;
+  background: var(--color-grey);
+  scroll-margin-top: 100px;
   text-align: center;
+  z-index: 0;
 }
 
 .card__bookmark {
