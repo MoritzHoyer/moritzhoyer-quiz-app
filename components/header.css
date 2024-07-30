@@ -2,7 +2,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
+  right: 0;
   background-color: var(--color-rose);
   color: var(--color-text);
   padding: 10px;
