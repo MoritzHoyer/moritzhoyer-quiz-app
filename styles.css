@@ -1,4 +1,4 @@
-@import "./css/global.css";
+@import "./global.css";
 
 .header {
   position: fixed;
@@ -90,7 +90,7 @@
   width: 100%;
 }
 
-.navigation {
+.nav {
   display: flex;
   justify-content: space-around;
 }
@@ -98,4 +98,8 @@
 .nav__link .icon {
   width: 60px;
   height: 60px d;
+}
+
+a {
+  text-decoration: none;
 }
