@@ -11,97 +11,133 @@
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
+
   <body>
     <header class="header">
       <h1 class="header__title">Quiz App</h1>
     </header>
-    <main class="main">
-      <section class="card" id="top">
-        <button class="card__bookmark">
-          <img
-            src="/resources/bookmark_filled.png"
-            alt="bookmark-button"
-            class="icon"
-          />
-        </button>
-        <h2 class="card__title">What property flips the axes in flexbox?</h2>
-        <button class="card__answer-button">Show Answer</button>
-        <p class="card__answer hidden">flex-direction</p>
-        <p class="card__tags">
-          <span class="tag">#html</span>
-          <span class="tag">#flexbox</span>
-          <span class="tag">#css</span>
-        </p>
-      </section>
-      <section class="card">
-        <button class="card__bookmark">
-          <img
-            src="/resources/bookmark_transparent.png"
-            alt="bookmark-button"
-            class="icon"
-          />
-        </button>
-        <h2 class="card__title">What property flips the axes in flexbox?</h2>
-        <button class="card__answer-button">Show Answer</button>
-        <p class="card__answer hidden">flex-direction</p>
-        <p class="card__tags">
-          <span class="tag">#html</span>
-          <span class="tag">#flexbox</span>
-          <span class="tag">#css</span>
-        </p>
-      </section>
-      <section class="card">
-        <button class="card__bookmark">
-          <img
-            src="/resources/bookmark_transparent.png"
-            alt="bookmark-button"
-            class="icon"
-          />
-        </button>
-        <h2 class="card__title">What property flips the axes in flexbox?</h2>
-        <button class="card__answer-button">Show Answer</button>
-        <p class="card__answer hidden">flex-direction</p>
-        <p class="card__tags">
-          <span class="tag">#html</span>
-          <span class="tag">#flexbox</span>
-          <span class="tag">#css</span>
-        </p>
-      </section>
-      <section class="card">
-        <button class="card__bookmark">
-          <img
-            src="/resources/bookmark_transparent.png"
-            alt="bookmark-button"
-            class="icon"
-          />
-        </button>
-        <h2 class="card__title">What property flips the axes in flexbox?</h2>
-        <button class="card__answer-button">Show Answer</button>
-        <p class="card__answer hidden">flex-direction</p>
-        <p class="card__tags">
-          <span class="tag">#html</span>
-          <span class="tag">#flexbox</span>
-          <span class="tag">#css</span>
-        </p>
-      </section>
-      <section class="card">
-        <button class="card__bookmark">
-          <img
-            src="/resources/bookmark_transparent.png"
-            alt="bookmark-button"
-            class="icon"
-          />
-        </button>
-        <h2 class="card__title">What property flips the axes in flexbox?</h2>
-        <button class="card__answer-button">Show Answer</button>
-        <p class="card__answer hidden">flex-direction</p>
-        <p class="card__tags">
-          <span class="tag">#html</span>
-          <span class="tag">#flexbox</span>
-          <span class="tag">#css</span>
-        </p>
+
+    <main>
+      <section class="question-cards">
+        <section class="card">
+          <h2 class="card__question">What does CSS stand for?</h2>
+          <button class="card__answer-button">SHOW ANSWER</button>
+          <p class="card__answer hidden">Cascading Style Sheet</p>
+          <button class="card__bookmark--active">
+            <img
+              src="/resources/bookmark_filled.png"
+              alt="bookmark-button"
+              class="icon"
+            />
+          </button>
+          <ul class="card__tags">
+            <li class="tag">#HTML</li>
+            <li class="tag">#WebDevelopment</li>
+            <li class="tag">#CSS</li>
+          </ul>
+        </section>
+
+        <section class="card">
+          <h2 class="card__question">What does the acronym "WWW" stand for?</h2>
+          <button class="card__answer-button">SHOW ANSWER</button>
+          <p class="card__answer hidden">World Wide Web</p>
+          <button class="card__bookmark--inactive">
+            <img
+              src="/resources/bookmark_transparent.png"
+              alt="bookmark-button"
+              class="icon"
+            />
+          </button>
+          <ul class="card__tags">
+            <li class="tag">#InternetBasics</li>
+            <li class="tag">#WebTech</li>
+            <li class="tag">#CyberSecurity</li>
+          </ul>
+        </section>
+
+        <section class="card">
+          <h2 class="card__question">
+            What is the name of the school that Harry Potter attends?
+          </h2>
+          <button class="card__answer-button">SHOW ANSWER</button>
+          <p class="card__answer hidden">
+            Hogwarts School of Witchcraft and Wizardry
+          </p>
+          <button class="card__bookmark--inactive">
+            <img
+              src="/resources/bookmark_transparent.png"
+              alt="bookmark-button"
+              class="icon"
+            />
+          </button>
+          <ul class="card__tags">
+            <li class="tag">#HarryPotter</li>
+            <li class="tag">#Wizarding</li>
+            <li class="tag">#Hogwarts</li>
+          </ul>
+        </section>
+
+        <section class="card">
+          <h2 class="card__question">
+            What is the name of the first Marvel Cinematic Universe film,
+            released in 2008?
+          </h2>
+          <button class="card__answer-button">SHOW ANSWER</button>
+          <p class="card__answer hidden">Iron Man</p>
+          <button class="card__bookmark--inactive">
+            <img
+              src="/resources/bookmark_transparent.png"
+              alt="bookmark-button"
+              class="icon"
+            />
+          </button>
+          <ul class="card__tags">
+            <li class="tag">#Marvel</li>
+            <li class="tag">#MCU</li>
+            <li class="tag">#Superheroes</li>
+          </ul>
+        </section>
+
+        <section class="card">
+          <h2 class="card__question">What is Taylor Swift's full name?</h2>
+          <button class="card__answer-button">SHOW ANSWER</button>
+          <p class="card__answer hidden">Taylor Alison Swift</p>
+          <button class="card__bookmark--inactive">
+            <img
+              src="/resources/bookmark_transparent.png"
+              alt="bookmark-button"
+              class="icon"
+            />
+          </button>
+          <ul class="card__tags">
+            <li class="tag">#TaylorSwift</li>
+            <li class="tag">#Swifties</li>
+            <li class="tag">#PopMusic</li>
+          </ul>
+        </section>
+
+        <section class="card">
+          <h2 class="card__question">
+            What is the name of the fictional town where Gilmore Girls is set?
+          </h2>
+          <button class="card__answer-button">SHOW ANSWER</button>
+          <p class="card__answer hidden">Stars Hollow</p>
+          <button class="card__bookmark--inactive">
+            <img
+              src="/resources/bookmark_transparent.png"
+              alt="bookmark-button"
+              class="icon"
+            />
+          </button>
+          <ul class="card__tags">
+            <li class="tag">#GilmoreGirls</li>
+            <li class="tag">#StarsHollow</li>
+            <li class="tag">#TeamLorelai</li>
+          </ul>
+        </section>
       </section>
     </main>
+
     <footer class="footer">
       <nav class="nav">
         <a href="index.html" class="nav__link nav__link--active">

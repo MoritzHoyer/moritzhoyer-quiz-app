@@ -9,12 +9,16 @@
 }
 
 .card {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
   position: relative;
-  margin: 20px 10%;
-  padding: 3% 10%;
+  margin: 30px 15px 30px 15px;
+  padding: 40px 20px 20px 20px;
   background: var(--color-grey);
-  scroll-margin-top: 100px;
-  text-align: center;
   z-index: 0;
 }
 
