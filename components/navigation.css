@@ -1,0 +1,26 @@
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: var(--color-rose);
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90px;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.icon {
+  height: 50px;
+  width: 50px;
+}
+
+.nav__link--active {
+  color: var(--color-blue);
+}

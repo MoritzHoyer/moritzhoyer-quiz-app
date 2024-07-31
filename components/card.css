@@ -1,59 +1,87 @@
-:root {
-  --color-rose: #ffd2ff;
-  --color-grey: #d7e1e1;
-  --color-blue: #0028aa;
-  --color-black: #000000;
-  --color-white: #fff;
-  --font: "Bricolage Grotesque", sans-serif;
-  --color-text: var(--color-black);
+.question-cards {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 100%;
 }
 
 .card {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  gap: 20px;
-  position: relative;
-  margin: 30px 15px 30px 15px;
-  padding: 40px 20px 20px 20px;
   background: var(--color-grey);
-  z-index: 0;
+  padding: 30px;
+  position: relative;
+  border-radius: 8px;
+  width: 100%;
 }
 
-.card__bookmark {
-  position: absolute;
-  top: -20px;
-  right: 5px;
+.card__question {
+  text-align: center;
+  margin: 20px;
+}
+
+.card__answer-button {
+  display: block;
+  margin: 40px auto;
+  background: var(--color-blue);
+  color: var(--color-rose);
   border: none;
+  border-radius: 100px;
+  padding: 10px 20px;
   cursor: pointer;
+  text-align: center;
+  letter-spacing: 1.5;
+}
+
+.card__answer-button:hover {
+  background: var(--color-rose);
+  color: var(--color-blue);
+  border: 2px solid var(--color-blue);
+}
+
+.card__answer.hidden {
+  display: none;
+}
+
+.card__bookmark--active,
+.card__bookmark--inactive {
+  position: absolute;
+  top: 10px;
+  right: 10px;
   background: none;
-}
-
-.card__bookmark .icon {
-  width: 50px;
-}
-
-.card__title {
-  font-family: var(--font);
-  font-weight: 700;
-  color: var(--color-black);
-  letter-spacing: 0.2;
-  font-size: 24px;
+  border: none;
 }
 
 .card__tags {
-  position: absolute;
-  left: 13px;
-  bottom: 1px;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+  margin-left: -10px;
+  margin-bottom: -10px;
 }
 
 .tag {
-  background-color: #000000;
-  border-radius: 5px;
-  padding: 5px 8px;
-  margin-right: 5px;
-  color: #d7e1e1;
-  font-size: 14px;
+  padding: 2px 5px;
+}
+
+@media (min-width: 768px) {
+  .question-cards {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .card {
+    flex: 1 1 calc(50% - 40px);
+    margin: 5px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .card {
+    flex: 1 1 calc(33.33% - 40px);
+  }
 }
