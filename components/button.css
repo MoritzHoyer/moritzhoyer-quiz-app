@@ -1,4 +1,21 @@
-.icon {
-  width: 24px;
-  height: 24px;
+.card__answer-button {
+  display: block;
+  margin: 40px auto;
+  background: var(--color-blue);
+  color: var(--color-rose);
+  border: none;
+  border-radius: 100px;
+  padding: 10px 20px;
+  cursor: pointer;
+  text-align: center;
+  letter-spacing: 1.5;
+}
+
+.card__answer-button:hover {
+  background: var(--color-rose);
+  color: var(--color-blue);
+}
+
+.card__answer.hidden {
+  display: none;
 }

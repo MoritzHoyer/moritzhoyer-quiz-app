@@ -20,7 +20,3 @@
   height: 50px;
   width: 50px;
 }
-
-.nav__link--active {
-  color: var(--color-blue);
-}
