@@ -7,7 +7,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 90px;
+  height: 60px;
 }
 
 .nav {
@@ -17,6 +17,10 @@
 }
 
 .icon {
-  height: 50px;
-  width: 50px;
+  height: 30px;
+  width: 30px;
+}
+
+.nav__link--active {
+  background-color: rgba(0, 0, 0, 0.1);
 }

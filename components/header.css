@@ -4,14 +4,14 @@
   width: 100%;
   background: var(--color-rose);
   z-index: 1000;
-  height: 90px;
+  height: 60px;
 }
 
 .header__title {
   text-align: center;
   padding: 10px;
   font-family: var(--font);
-  font-size: 60px;
+  font-size: 36px;
   font-weight: 900;
   letter-spacing: -0.5;
 }
