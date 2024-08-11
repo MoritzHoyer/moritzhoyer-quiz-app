@@ -14,11 +14,11 @@
 
   <body>
     <header class="header">
-      <h1 class="header__title">Quiz App</h1>
+      <h1 class="header__title">Quizz App</h1>
     </header>
 
     <main>
-      <h2>Questions</h2>
+      <h2 class="main-title">Do you know the answer?</h2>
       <section class="question-cards">
         <section class="card">
           <h3 class="card__question">What does CSS stand for?</h3>
@@ -26,7 +26,7 @@
           <p class="card__answer hidden">Cascading Style Sheet</p>
           <button class="card__bookmark--active">
             <img
-              src="/resources/bookmark_filled.png"
+              src="/resources/bookmark-check_active.svg"
               alt="bookmark-button"
               class="icon"
             />
@@ -42,9 +42,9 @@
           <h3 class="card__question">What does the acronym "WWW" stand for?</h3>
           <button class="card__answer-button">SHOW ANSWER</button>
           <p class="card__answer hidden">World Wide Web</p>
-          <button class="card__bookmark--inactive">
+          <button class="card__bookmark--active">
             <img
-              src="/resources/bookmark_filled.png"
+              src="/resources/bookmark-check_active.svg"
               alt="bookmark-button"
               class="icon"
             />
@@ -64,9 +64,9 @@
           <p class="card__answer hidden">
             Hogwarts School of Witchcraft and Wizardry
           </p>
-          <button class="card__bookmark--inactive">
+          <button class="card__bookmark--active">
             <img
-              src="/resources/bookmark_filled.png"
+              src="/resources/bookmark-check_active.svg"
               alt="bookmark-button"
               class="icon"
             />
@@ -85,9 +85,9 @@
           </h3>
           <button class="card__answer-button">SHOW ANSWER</button>
           <p class="card__answer hidden">Iron Man</p>
-          <button class="card__bookmark--inactive">
+          <button class="card__bookmark--active">
             <img
-              src="/resources/bookmark_filled.png"
+              src="/resources/bookmark-check_active.svg"
               alt="bookmark-button"
               class="icon"
             />
@@ -103,9 +103,9 @@
           <h3 class="card__question">What is Taylor Swift's full name?</h3>
           <button class="card__answer-button">SHOW ANSWER</button>
           <p class="card__answer hidden">Taylor Alison Swift</p>
-          <button class="card__bookmark--inactive">
+          <button class="card__bookmark--active">
             <img
-              src="/resources/bookmark_filled.png"
+              src="/resources/bookmark-check_active.svg"
               alt="bookmark-button"
               class="icon"
             />
@@ -125,7 +125,7 @@
           <p class="card__answer hidden">Stars Hollow</p>
           <button class="card__bookmark--inactive">
             <img
-              src="/resources/bookmark_transparent.png"
+              src="/resources/bookmark-check_inactive.svg"
               alt="bookmark-button"
               class="icon"
             />
@@ -146,7 +146,7 @@
           <p class="card__answer hidden">Central Perk</p>
           <button class="card__bookmark--inactive">
             <img
-              src="/resources/bookmark_transparent.png"
+              src="/resources/bookmark-check_inactive.svg"
               alt="bookmark-button"
               class="icon"
             />
@@ -165,9 +165,9 @@
           </h3>
           <button class="card__answer-button">SHOW ANSWER</button>
           <p class="card__answer hidden">Link</p>
-          <button class="card__bookmark--active">
+          <button class="card__bookmark--inactive">
             <img
-              src="/resources/bookmark_transparent.png"
+              src="/resources/bookmark-check_inactive.svg"
               alt="bookmark-button"
               class="icon"
             />
@@ -187,7 +187,7 @@
           <p class="card__answer hidden">Tim Berners-Lee</p>
           <button class="card__bookmark--inactive">
             <img
-              src="/resources/bookmark_transparent.png"
+              src="/resources/bookmark-check_inactive.svg"
               alt="bookmark-button"
               class="icon"
             />
@@ -207,7 +207,7 @@
           <p class="card__answer hidden">Ron Weasley</p>
           <button class="card__bookmark--inactive">
             <img
-              src="/resources/bookmark_transparent.png"
+              src="/resources/bookmark-check_inactive.svg"
               alt="bookmark-button"
               class="icon"
             />
@@ -228,7 +228,7 @@
           <p class="card__answer hidden">Infinity Stones</p>
           <button class="card__bookmark--inactive">
             <img
-              src="/resources/bookmark_transparent.png"
+              src="/resources/bookmark-check_inactive.svg"
               alt="bookmark-button"
               class="icon"
             />
@@ -248,7 +248,7 @@
           <p class="card__answer hidden">2006</p>
           <button class="card__bookmark--inactive">
             <img
-              src="/resources/bookmark_transparent.png"
+              src="/resources/bookmark-check_inactive.svg"
               alt="bookmark-button"
               class="icon"
             />
@@ -269,7 +269,7 @@
           <p class="card__answer hidden">Lorelai Gilmore and Rory Gilmore</p>
           <button class="card__bookmark--inactive">
             <img
-              src="/resources/bookmark_transparent.png"
+              src="/resources/bookmark-check_inactive.svg"
               alt="bookmark-button"
               class="icon"
             />
@@ -290,7 +290,7 @@
           <p class="card__answer hidden">Geller</p>
           <button class="card__bookmark--inactive">
             <img
-              src="/resources/bookmark_transparent.png"
+              src="/resources/bookmark-check_inactive.svg"
               alt="bookmark-button"
               class="icon"
             />
@@ -310,9 +310,9 @@
           <p class="card__answer hidden">
             It is a container element used to group and style content together.
           </p>
-          <button class="card__bookmark--active">
+          <button class="card__bookmark--inactive">
             <img
-              src="/resources/bookmark_transparent.png"
+              src="/resources/bookmark-check_inactive.svg"
               alt="bookmark-button"
               class="icon"
             />
@@ -329,21 +329,34 @@
     <footer class="footer">
       <nav class="nav">
         <a href="index.html" class="nav__link nav__link--active">
-          <img
-            src="/resources/home_filled.png"
-            alt="home-button"
-            class="icon"
-          />
+          <div class="nav__item">
+            <img
+              src="/resources/home_active.svg"
+              alt="home-button"
+              class="icon"
+            />
+            <span class="nav__label">Home</span>
+          </div>
         </a>
         <a href="bookmarks.html" class="nav__link">
-          <img
-            src="/resources/bookmark_transparent.png"
-            alt="bookmarks-button"
-            class="icon"
-          />
+          <div class="nav__item">
+            <img
+              src="/resources/bookmark-check_inactive.svg"
+              alt="bookmarks-button"
+              class="icon"
+            />
+            <span class="nav__label">Bookmarks</span>
+          </div>
         </a>
         <a href="profile.html" class="nav__link">
-          <img src="/resources/profile_filled.png" alt="profile" class="icon" />
+          <div class="nav__item">
+            <img
+              src="/resources/profile_inactive.svg"
+              alt="profile-button"
+              class="icon"
+            />
+            <span class="nav__label">Profile</span>
+          </div>
         </a>
       </nav>
     </footer>

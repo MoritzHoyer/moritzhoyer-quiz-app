@@ -1,8 +1,15 @@
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quiz App - Profile</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
@@ -10,59 +17,96 @@
       <h1 class="header__title">Quiz App</h1>
     </header>
     <main>
-      <h2>Moritz Hoyer</h2>
-      <section class="profile">
+      <section class="profile-header">
         <img
-          src="/resources/profile_placeholder.png"
+          src="/resources/230329_DFI_Foto_Slack_mh.jpg"
           alt="Profile Picture"
-          class="profile__picture"
+          class="profile-header__picture"
         />
-        <p class="profile__description">
-          Hi, I'm Moritz, a hamburg based graphic designer, art director, and
-          lecturer with special focus on branding, typography and packaging
-          design. Senior Art Director at Tabula Rasa Lecturer at Design Factory
-          International Currently training as a Web Developer at
-          neuefische/Spiced-Academy.
-        </p>
-        <button class="profile__darkmode-button">Toggle Dark Mode</button>
-        <div class="profile__stats">
-          <div class="profile__stat">
-            <img
-              src="/resources/questions_answered_icon.png"
-              alt="Questions Answered"
-              class="icon"
-            />
-            <span>20 Questions Answered</span>
-          </div>
-          <div class="profile__stat">
-            <img
-              src="/resources/bookmarks_icon.png"
-              alt="Bookmarks"
-              class="icon"
-            />
-            <span>10 Bookmarks</span>
+        <div class="profile-header__info">
+          <h2 class="profile-header__name">Moritz Hoyer</h2>
+          <div class="profile-header__icons">
+            <div class="profile-header__icon-group">
+              <div class="profile-header__icon-counter">
+                <img
+                  src="/resources/question_inactive.svg"
+                  alt="Created Questions"
+                  class="icon profile-header__icon"
+                />
+                <span class="profile-header__counter">23</span>
+              </div>
+              <div class="profile-header__label">Your questions</div>
+            </div>
+            <div class="profile-header__icon-group">
+              <div class="profile-header__icon-counter">
+                <img
+                  src="/resources/bookmark-check_inactive.svg"
+                  alt="Bookmarks"
+                  class="icon profile-header__icon"
+                />
+                <span class="profile-header__counter">5</span>
+              </div>
+              <div class="profile-header__label">Your bookmarks</div>
+            </div>
           </div>
         </div>
       </section>
+
+      <section class="profile-about">
+        <h3 class="profile-about__title">About me</h3>
+        <p class="profile-about__description">
+          Hi, I'm Moritz, a hamburg based graphic designer and art director with
+          a special focus on branding, typography, and packaging design. I also
+          work as a lecturer at the Design Factory International in Hamburg.
+          Here I pass on my knowledge of branding and packaging design to
+          students. Currently I am taking part in a web developer training
+          course at the Spiced Academy.
+        </p>
+      </section>
+
+      <section class="profile-settings">
+        <h3 class="profile-settings__title">Settings</h3>
+        <div class="profile-settings__darkmode">
+          <span class="profile-settings__label">Dark Mode</span>
+          <label class="switch">
+            <input type="checkbox" />
+            <span class="slider"></span>
+          </label>
+        </div>
+      </section>
     </main>
+
     <footer class="footer">
       <nav class="nav">
         <a href="index.html" class="nav__link">
-          <img
-            src="/resources/home_filled.png"
-            alt="home-button"
-            class="icon"
-          />
+          <div class="nav__item">
+            <img
+              src="/resources/home_inactive.svg"
+              alt="home-button"
+              class="icon"
+            />
+            <span class="nav__label">Home</span>
+          </div>
         </a>
         <a href="bookmarks.html" class="nav__link">
-          <img
-            src="/resources/bookmark_filled.png"
-            alt="bookmarks-button"
-            class="icon"
-          />
+          <div class="nav__item">
+            <img
+              src="/resources/bookmark-check_inactive.svg"
+              alt="bookmarks-button"
+              class="icon"
+            />
+            <span class="nav__label">Bookmarks</span>
+          </div>
         </a>
         <a href="profile.html" class="nav__link nav__link--active">
-          <img src="/resources/profile_filled.png" alt="profile" class="icon" />
+          <div class="nav__item">
+            <img
+              src="/resources/profile_active.svg"
+              alt="profile-button"
+              class="icon"
+            />
+            <span class="nav__label">Profile</span>
+          </div>
         </a>
       </nav>
     </footer>

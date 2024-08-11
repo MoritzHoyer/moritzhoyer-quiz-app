@@ -18,7 +18,7 @@
     </header>
 
     <main>
-      <h2>My bookmarks</h2>
+      <h2 class="main-title">My bookmarks</h2>
       <section class="question-cards">
         <section class="card">
           <h3 class="card__question">What does CSS stand for?</h3>
@@ -26,7 +26,7 @@
           <p class="card__answer hidden">Cascading Style Sheet</p>
           <button class="card__bookmark--active">
             <img
-              src="/resources/bookmark_filled.png"
+              src="/resources/bookmark-check_active.svg"
               alt="bookmark-button"
               class="icon"
             />
@@ -44,7 +44,7 @@
           <p class="card__answer hidden">World Wide Web</p>
           <button class="card__bookmark--inactive">
             <img
-              src="/resources/bookmark_filled.png"
+              src="/resources/bookmark-check_active.svg"
               alt="bookmark-button"
               class="icon"
             />
@@ -66,7 +66,7 @@
           </p>
           <button class="card__bookmark--inactive">
             <img
-              src="/resources/bookmark_filled.png"
+              src="/resources/bookmark-check_active.svg"
               alt="bookmark-button"
               class="icon"
             />
@@ -87,7 +87,7 @@
           <p class="card__answer hidden">Iron Man</p>
           <button class="card__bookmark--inactive">
             <img
-              src="/resources/bookmark_filled.png"
+              src="/resources/bookmark-check_active.svg"
               alt="bookmark-button"
               class="icon"
             />
@@ -105,7 +105,7 @@
           <p class="card__answer hidden">Taylor Alison Swift</p>
           <button class="card__bookmark--inactive">
             <img
-              src="/resources/bookmark_filled.png"
+              src="/resources/bookmark-check_active.svg"
               alt="bookmark-button"
               class="icon"
             />
@@ -122,21 +122,34 @@
     <footer class="footer">
       <nav class="nav">
         <a href="index.html" class="nav__link">
-          <img
-            src="/resources/home_filled.png"
-            alt="home-button"
-            class="icon"
-          />
+          <div class="nav__item">
+            <img
+              src="/resources/home_inactive.svg"
+              alt="home-button"
+              class="icon"
+            />
+            <span class="nav__label">Home</span>
+          </div>
         </a>
         <a href="bookmarks.html" class="nav__link nav__link--active">
-          <img
-            src="/resources/bookmark_filled.png"
-            alt="bookmarks-button"
-            class="icon"
-          />
+          <div class="nav__item">
+            <img
+              src="/resources/bookmark-check_active.svg"
+              alt="bookmarks-button"
+              class="icon"
+            />
+            <span class="nav__label">Bookmarks</span>
+          </div>
         </a>
         <a href="profile.html" class="nav__link">
-          <img src="/resources/profile_filled.png" alt="profile" class="icon" />
+          <div class="nav__item">
+            <img
+              src="/resources/profile_inactive.svg"
+              alt="profile-button"
+              class="icon"
+            />
+            <span class="nav__label">Profile</span>
+          </div>
         </a>
       </nav>
     </footer>

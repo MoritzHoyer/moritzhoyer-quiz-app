@@ -2,16 +2,18 @@
   position: fixed;
   top: 0;
   width: 100%;
-  background: var(--color-rose);
+  background: var(--color-grey);
   z-index: 1000;
   height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .header__title {
   text-align: center;
-  padding: 10px;
   font-family: var(--font);
-  font-size: 36px;
+  font-size: 24px;
   font-weight: 900;
   letter-spacing: -0.5;
 }
