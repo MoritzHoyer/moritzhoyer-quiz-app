@@ -54,6 +54,7 @@
   background: none;
   border: none;
   width: 35px;
+  cursor: pointer;
 }
 
 @media (max-width: 767px) {

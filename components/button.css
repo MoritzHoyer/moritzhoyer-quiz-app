@@ -9,12 +9,22 @@
   text-align: center;
   letter-spacing: 1.5;
   margin: 20px auto;
+  transition: transform 0.2s ease, background-color 0.2s ease;
 }
 
 .card__answer-button:hover {
-  background: var(--color-blue);
+  transform: scale(1.05);
+}
+
+.card__answer-button.active {
+  background-color: var(--color-blue);
 }
 
 .card__answer.hidden {
   display: none;
+}
+
+.card__answer {
+  text-align: center;
+  margin-top: 12px;
 }
