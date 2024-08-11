@@ -1,6 +1,5 @@
 .card__answer-button {
   display: block;
-  margin: 40px auto;
   background: var(--color-black);
   color: var(--color-white);
   border: none;
@@ -9,6 +8,7 @@
   cursor: pointer;
   text-align: center;
   letter-spacing: 1.5;
+  margin: 20px auto;
 }
 
 .card__answer-button:hover {
