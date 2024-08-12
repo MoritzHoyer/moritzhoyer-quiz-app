@@ -1,0 +1,52 @@
+.card-form {
+  margin: 0 0 30px 0;
+  width: 100%;
+  padding: 20px;
+  background: var(--color-light);
+  background-color: var(--color-rose);
+}
+
+.card-form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.card-form textarea,
+.card-form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 8px;
+  border: 1px solid var(--color-white);
+  font-size: 16px;
+  font-family: var(--font);
+}
+
+.card-form textarea {
+  resize: vertical;
+}
+
+.card-form button {
+  display: block;
+  background: var(--color-black);
+  color: var(--color-white);
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  text-align: center;
+  letter-spacing: 1.5px;
+  margin: 20px auto;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.card-form button:hover {
+  transform: scale(1.05);
+}
+
+.char-counter {
+  font-size: 12px;
+  color: var(--color-black);
+  margin-bottom: 20px;
+  text-align: right;
+}

@@ -59,9 +59,8 @@
 
 .profile-about {
   background: var(--color-rose);
-  padding: 25px;
+  padding: 20px;
   position: relative;
-  border-radius: 8px;
   width: 100%;
   margin-bottom: 20px;
 }
@@ -78,9 +77,8 @@
 
 .profile-settings {
   background: var(--color-rose);
-  padding: 25px;
+  padding: 20px;
   position: relative;
-  border-radius: 8px;
   width: 100%;
   margin-bottom: 20px;
 }
