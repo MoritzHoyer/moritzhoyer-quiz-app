@@ -11,8 +11,10 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/components/css/styles.css" />
+    <link rel="stylesheet" href="/components/css/profile.css" />
+    <script src="/components/js/profile.js" defer></script>
   </head>
-  <body>
+  <body data-js="body">
     <header class="header">
       <h1 class="header__title">Quiz App</h1>
     </header>
@@ -68,10 +70,9 @@
         <h3 class="profile-settings__title">Settings</h3>
         <div class="profile-settings__darkmode">
           <span class="profile-settings__label">Dark Mode</span>
-          <label class="switch">
-            <input type="checkbox" />
-            <span class="slider"></span>
-          </label>
+          <button class="switch" data-js="switch">
+            <span class="slider" data-js="slider"></span>
+          </button>
         </div>
       </section>
     </main>
