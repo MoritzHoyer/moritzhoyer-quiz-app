@@ -8,9 +8,8 @@
 
 .card {
   background: var(--color-rose);
-  padding: 25px;
+  padding: 20px;
   position: relative;
-  border-radius: 8px;
   width: 100%;
   max-width: 335px;
   display: flex;
@@ -40,10 +39,8 @@
 
 .tag {
   font-size: 12px;
-  border: 1px solid;
-  border-radius: 20px;
+  text-decoration: underline;
   margin: 7px 7px 0px 0px;
-  padding: 2px 5px;
 }
 
 .card__bookmark--active,

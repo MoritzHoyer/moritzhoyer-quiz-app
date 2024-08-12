@@ -3,7 +3,6 @@
   background: var(--color-black);
   color: var(--color-white);
   border: none;
-  border-radius: 100px;
   padding: 10px 20px;
   cursor: pointer;
   text-align: center;
@@ -27,4 +26,5 @@
 .card__answer {
   text-align: center;
   margin-top: 12px;
+  font-weight: 600;
 }
