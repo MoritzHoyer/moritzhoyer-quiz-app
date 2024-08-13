@@ -49,4 +49,9 @@
   color: var(--color-black);
   margin-bottom: 20px;
   text-align: right;
+  transition: color 0.3s ease;
+}
+
+.char-counter.tooManyCharacters {
+  color: red;
 }

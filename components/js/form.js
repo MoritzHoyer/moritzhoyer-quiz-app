@@ -7,7 +7,16 @@ document.addEventListener("DOMContentLoaded", function () {
     const currentLength = textarea.value.length;
     const remaining = maxLength - currentLength;
     const counter = document.getElementById(counterId);
+
+    // Update the counter text
     counter.textContent = `${remaining} characters remaining`;
+
+    // Add or remove class based on character count
+    if (remaining <= 0) {
+      counter.classList.add("tooManyCharacters");
+    } else {
+      counter.classList.remove("tooManyCharacters");
+    }
   }
 
   // Event listeners to update counters
@@ -22,7 +31,7 @@ document.addEventListener("DOMContentLoaded", function () {
     updateCharCounter(answerTextarea, "answer-counter");
   });
 
-  // Update
+  // Initial update
   updateCharCounter(questionTextarea, "question-counter");
   updateCharCounter(answerTextarea, "answer-counter");
 
